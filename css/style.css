@@ -1,0 +1,192 @@
+ul, li, ol {
+	list-style: none;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.pc-layout {
+	position: relative;
+	overflow: hidden;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.icon-1 {
+	display: inline-block;
+	background-image: url('../img/ico_pc_20.png');
+	background-position: left top;
+	vertical-align: middle;
+}
+
+.icon-1.icon-head {
+	width: 16px;
+	height: 16px;
+	background-position: -20px -260px;
+}
+
+/*------------------------------HEADER------------------------------*/
+header {
+	background-color: #fff;
+}
+header .pc-layout {}
+header select {
+	max-width: 1240px;
+	border: none;
+	outline: none;
+	float: right;
+}
+
+
+header .pc-layout> nav {display: inline-block;}
+header .pc-layout> nav h1 {float: left;}
+header .pc-layout> nav h1 a {}
+header .pc-layout> nav h1 a img {}
+header .pc-layout> nav ul {
+	margin-top: 27px;
+    padding: 20px 0px 20px 10px;
+}
+header .pc-layout> nav ul li {
+	padding: 0 10px;
+}
+header .pc-layout> nav ul li a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #686f75;
+	margin: 0;
+	padding: 12px 0px 10px;
+}
+
+header .pc-layout .gnb-list {display: inline-block;overflow: hidden;}
+header .pc-layout .gnb-list li {display: inline-block;}
+header .pc-layout .gnb-list li a {text-decoration: none;}
+
+header .pc-layout .sub-list {display: inline-block;overflow: hidden;}
+header .pc-layout .sub-list li {display: inline-block;color: #fff;}
+header .pc-layout .sub-list li a {
+	text-decoration: none;
+	background-color: #36719d;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+
+
+/*------------------------------HEADER------------------------------*/
+
+/*------------------------------SLIDER------------------------------*/
+
+.content-area {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 64vh;
+
+	transition: all 0.4s;
+	animation-name: change_opacity;
+}
+@keyframes change_opacity {
+	from {opacity: 0.5;}
+	to {opacity: 1;}
+}
+.content-area label {cursor: pointer;}
+
+#check-1:checked ~ .content-area {
+	background-image: url('../img/main-grandeur-20fl-keyvisual-w.jpg');
+	opacity: 1;
+}
+#check-2:checked ~ .content-area {
+	background-image: url('../img/main-keyvisual-tucson-20my-w.jpg');
+	opacity: 1;
+}
+#check-3:checked ~ .content-area {
+	background-image: url('../img/main-keyvisual-sonata-dn8-sensuous-19lc-19wheel-w.jpg');
+	opacity: 1;
+}
+#check-4:checked ~ .content-area {
+	background-image: url('../img/main-keyvisual-kona-hybrid-lc-w.jpg');
+	opacity: 1;
+}
+#check-5:checked ~ .content-area {
+	background-image: url('../img/main-keyvisual-venue-launching-w.jpg');
+	opacity: 1;
+}
+#check-6:checked ~ .content-area {
+	background-image: url('../img/main-keyvisual-Palisade-w.jpg');
+	opacity: 1;
+}
+
+
+.content-area .text-box {
+	padding: 5% 0 0 10%;
+}
+.content-area .text-box h2 {
+	display: none;
+	font-size: 54px;
+	color: #000;
+	font-weight: 500;
+	text-shadow: -5px -5px 25px rgba(0,0,0,0.2);
+}
+.content-area .text-box h2 span {
+	color: #000;
+	font-size: 24px;
+	text-shadow: -5px -5px 25px rgba(0,0,0,0.2);
+	max-width: 60%;
+	word-break: keep-all;
+}
+
+input#check-1:checked ~ .content-area .text-box .slider-text-1 {display: block;}
+input#check-1:checked ~ .content-area .text-box .slider-text-1 span {color: #fff;}
+input#check-2:checked ~ .content-area .text-box .slider-text-2 {display: block;}
+input#check-3:checked ~ .content-area .text-box .slider-text-3 {display: block;color: #fff;}
+input#check-4:checked ~ .content-area .text-box .slider-text-4 {display: block;}
+input#check-5:checked ~ .content-area .text-box .slider-text-5 {display: block;color: #fff;}
+input#check-5:checked ~ .content-area .text-box .slider-text-5 span {color: #fff;}
+input#check-6:checked ~ .content-area .text-box .slider-text-6 {display: block;}
+
+
+
+.controller-slider .slider-paging {}
+.controller-slider .slider-paging li {display: inline-block; padding-right: 20px;}
+.controller-slider .slider-paging li label {color: #fff;}
+.controller-slider .slider-paging li label .disc {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 50%; 
+}
+
+#check-1,#check-2,#check-3,#check-4,#check-5,#check-6 {display: none;}
+
+#check-1:checked ~ .controller-slider .paging-1 .disc {background-color: #0071bb;}
+#check-2:checked ~ .controller-slider .paging-2 .disc {background-color: #0071bb;}
+#check-3:checked ~ .controller-slider .paging-3 .disc {background-color: #0071bb;}
+#check-4:checked ~ .controller-slider .paging-4 .disc {background-color: #0071bb;}
+#check-5:checked ~ .controller-slider .paging-5 .disc {background-color: #0071bb;}
+#check-6:checked ~ .controller-slider .paging-6 .disc {background-color: #0071bb;}
+
+
+.controller-slider {
+	margin: 0;
+	padding: 0;
+	background-color: #e6e1dd;
+	width: 100%;
+	overflow: hidden;
+	padding: 1.8rem;
+	text-align: center;
+}
+
+/*------------------------------SLIDER------------------------------*/
+
+
+
+
+/*------------------------------SECTION--2------------------------------*/
+
+
+/*------------------------------SECTION--2------------------------------*/
